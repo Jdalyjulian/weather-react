@@ -1,18 +1,17 @@
 
 import './App.css';
-import Weather from "./Weather";
-function App() {
+import Search from "./Search";
+
+
+
+import Footer from "./Footer";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <p>
-        Hello World
-        </p>
-        <Weather city="Dallas"/>
-      </header>
+      <h2>Weather App</h2>
+      <Search />
+      <Footer />
     </div>
   );
 }
-
-export default App;

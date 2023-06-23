@@ -1,38 +1,122 @@
 .App {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: rgb(199, 220, 229);
+  padding: 20px;
+  border: 1px solid rgb(33, 33, 33);
+  border-radius: 5px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App h2{
+  color:#668ba4;
+}
+
+.Forecast {
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: rgb(81, 79, 79);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+small {
+  text-align: center;
+  color: #668ba4;
+}
+
+.form-control {
+  background: rgb(209, 211, 211);
+  color: #668ba4;
+  border: 1px solid #668ba4;
+}
+
+.btn {
+  color: aliceblue;
+  background: #668ba4;
+  border: 1px solid #668ba4;
+  transition: all 150ms ease-in-out;
+}
+
+.btn:hover {
+  color: #668ba4;
+  background: aliceblue;
+  border: 1px solid #668ba4;
+}
+
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 70px;
+  width: 70px;
+}
+
+.weather-temperature strong {
+  color: #668ba4;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.weather-temperature .active {
+  color: #668ba4;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.weather-forecast {
+  display: inline;
+  margin-top: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.forecast-date {
+  font-size: 16px;
+  color: rgb(135, 135, 135);
+  font-weight: 500;
+}
+.forecast-temperature-min {
+  color: rgb(135, 135, 135);
+  opacity: 0.8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.forecast-temperature {
+  font-size: 13px;
+  color: rgb(135, 135, 135);
+}
+.sourceCode {
+  color: rgb(135, 135, 135);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sourceCode:hover {
+  color: #668ba4;
 }
